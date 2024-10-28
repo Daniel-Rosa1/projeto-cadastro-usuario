@@ -1,0 +1,11 @@
+.users{
+  width: 100%;
+  display: flex;
+  justify-content: space-evenly;
+
+  &__card{
+    width: 30%;
+
+  }
+}
+
