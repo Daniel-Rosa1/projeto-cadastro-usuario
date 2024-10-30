@@ -1,7 +1,7 @@
 import { HttpClient } from "@angular/common/http";
 import { Injectable } from "@angular/core";
 import { Observable } from "rxjs";
-import { IUserPlaceholder } from "../interfaces/user-placeholder/user-placeholder.interface";
+import { UserPlaceholderListResponse } from "../types/users-placeholder-list-response";
 
 @Injectable({
   providedIn: 'root'
@@ -11,8 +11,8 @@ export class UsersPlaceholderService {
     private readonly _httpClient: HttpClient
   ) { }
 
-  getPlaceholderUsers(): Observable<UsersPlaceholderService>{
-    return this._httpClient.get<UsersPlaceholderService>('https://jsonplaceholder.typicode.com/users')
+  getPlaceholderUsers(): Observable<UserPlaceholderListResponse>{
+    return this._httpClient.get<UserPlaceholderListResponse>('https://jsonplaceholder.typicode.com/users')
   }
 
 }
