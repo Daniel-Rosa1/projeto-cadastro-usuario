@@ -19,6 +19,7 @@ import { UserFormComponent } from './user-form/user-form.component';
     AngularMaterialModule,
     DirectiveModule,
     PipesModule,
+    
 
   ],
   exports: [
