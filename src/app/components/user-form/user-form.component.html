@@ -83,6 +83,7 @@
             [max]="maxDate"
             name="dataNascimento"
             [ngModel]="dateValue"
+            (dateChange)="onDateChange($event)"
             readonly required>
           <mat-datepicker-toggle matIconSuffix [for]="picker"></mat-datepicker-toggle>
           <mat-datepicker #picker>
